@@ -1,6 +1,17 @@
 =rob
 	font-family: 'Roboto', sans-serif
-
+=lg1920
+	@media only screen and (max-width: "5000px")
+		@content
+=lg1700
+	@media only screen and (max-width: "1700px")
+		@content
+=lg1400
+	@media only screen and (max-width: "1399px")
+		@content
+=lg1300
+	@media only screen and (max-width: "1299px")
+		@content
 =lg
 	@media only screen and (max-width: "1169px")
 		@content
@@ -35,6 +46,7 @@ $orange4: #febb01
 $orange5: #fcbe24
 $orange-bg: #fff3cb
 $orange-bg2: #feeca4
+$red: #fd140a
 
 
 
@@ -60,6 +72,10 @@ body
 	color: $white
 	font-size: 48px
 	font-weight: 700
+	+m
+		font-size: 20px
+	+xs
+		font-size: 18px
 .title-m
 	color: $blue
 	font-weight: 400
@@ -68,16 +84,26 @@ body
 	letter-spacing: 2.5px
 	+m
 		letter-spacing: 1px
+		margin-bottom: 20px
 	strong
 		font-weight: 700
 	&--mb-big
 		margin-bottom: 45px
+		+m
+			margin-bottom: 25px
+
 .title-sm
 	color: $orange
 	font-size: 24px
 	font-weight: 500
+	+m
+		font-size: 16px
 
 .section
 	padding-top: 56px
+	+m
+		padding-top: 20px
 	&--pt-big
 		padding-top: 65px
+		+m
+			padding-top: 30px

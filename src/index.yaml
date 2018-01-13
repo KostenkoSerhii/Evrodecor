@@ -3,4 +3,9 @@ ProjectTitle: Evrodecor
 PageList:
 - file: page.html
   ready: 50%
+- file: page-callback.html
+  ready: 50%
+- file: page-thanks.html
+  ready: 50%
+
 

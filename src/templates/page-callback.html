@@ -1,0 +1,64 @@
+---
+title: callback page
+
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+{% include "partials/_header.html" %}
+<!--begin callback-->
+<div class="callback">
+	<!--begin l-->
+	<div class="l">
+		<!--begin callback__inner-->
+		<div class="callback__inner callback__inner--pad-big">
+			<!--begin callback__left-->
+			<div class="callback__left">
+				<img src="img/callback1.png" alt="alt">
+			</div>
+			<!--end callback__left-->
+			<!--begin callback__right-->
+			<div class="callback__right">
+				<!--begin form-->
+				<div class="form">
+					<form action="mail.php">
+						<!--begin form__inner-->
+						<div class="form__inner form__inner--tac">
+							<h1 class="form__title">Вы в минуте от потолков
+							своей мечты!</h1>
+							<div class="field">
+								<input type="text" placeholder="Ваше имя">
+							</div>
+							<div class="field field--mb-big">
+								<input type="text" placeholder="Ваш телефон">
+							</div>
+							<button class="btn  btn--shadow-border btn--mb" type="submit"><span>Позвоните мне</span></button>
+							<div class="form__text form__text--mb-none">
+								В течении часа мы перезвоним <br>
+								и договоримся о дальнейших <br>
+								действиях! Вы на верном пути! :)
+							</div>
+						</div>
+						<!--end form__inner-->
+						
+					</form>
+				</div>
+				<!--end form-->
+
+			</div>
+			<!--end callback__right-->
+
+
+		</div>
+		<!--end callback__inner-->
+		
+	</div>
+	<!--end l-->
+
+</div>
+<!--end callback-->
+
+
+
+
+{% endblock %}

@@ -1,7 +1,231 @@
 .hero
-	min-height: 517px
+	// min-height: 517px
 	border-bottom: 1px solid $blue
 	background-color: #ffedba
 	padding-top: 65px
 	+cover
+	+m
+		padding-top: 30px
 	&__inner
+.hero-slider
+	position: relative
+	&__slide
+		// min-height: 378px
+		min-height: 517px
+		+m
+			min-height: auto
+			margin-bottom: 30px
+		&--gift
+			.hero-slider__wrapper
+				padding: 19px 26px 18px 0px
+				transform: translateX(73px)
+				+lg
+					transform: translateX(23px)
+			.hero-slider__inner
+				background: $white
+			.hero-slider__title
+				color: $blue-l
+				padding-left: 117px
+			.hero-slider__text
+				width: 420px
+				margin-right: 65px
+			.hero-slider__btn-block
+				margin-right: 172px
+			.hero-slider__img
+				left: -190px
+				bottom: -81px
+				max-width: 469px
+				height: auto
+				max-height: 479px
+				+lg1300
+					max-width: 300px
+					left: -40px
+					bottom: -21px
+		&--manager
+			.hero-slider__wrapper
+				padding: 19px 26px 18px 0px
+			.hero-slider__inner
+			.hero-slider__title
+				color: $red
+				padding-left: 77px
+				margin-bottom: 24px
+			.hero-slider__text
+				width: 420px
+				margin-right: 80px
+				margin-bottom: 53px
+				strong
+					font-size: 36px
+			.hero-slider__btn-block
+				margin-right: 162px
+			.hero-slider__img
+				left: -42px
+				bottom: -42px
+				max-width: 382px
+				height: auto
+				max-height: 385px
+				+lg
+					max-width: 300px
+					left: -20px
+					bottom: -20px
+		&--night
+			.hero-slider__wrapper
+				padding: 19px 26px 18px 0px
+				transform: translateX(23px)
+				+lg
+					transform: translateX(0px)
+			.hero-slider__inner
+			.hero-slider__title
+				padding-left: 133px
+				margin-bottom: 24px
+			.hero-slider__text
+				width: 535px
+				margin-right: 80px
+				margin-bottom: 63px
+				color: $white
+			.hero-slider__btn-block
+				margin-right: 231px
+			.hero-slider__img
+				left: -83px
+				bottom: -40px
+				max-width: 383px
+				height: auto
+				max-height: 377px
+				+lg
+					max-width: 300px
+					left: -20px
+					bottom: -20px
+		&--gift, &--night, &--manager
+			.hero-slider__wrapper
+				+m
+					transform: translateX(0px)
+					padding-top: 13px
+					padding-right: 18px
+			.hero-slider__inner
+				+m
+					padding-top: 10px
+			.hero-slider__title
+				+m
+					margin-bottom: 10px
+				+xs
+					padding-left: 0
+			.hero-slider__text
+				+m
+					margin-right: auto
+					padding-left: 100px
+					margin-bottom: 20px
+				+xs
+					width: auto
+					padding: 0
+				strong
+					+m
+						font-size: 16px
+
+			.hero-slider__btn-block
+				+m
+					margin-right: auto
+					padding-left: 55px
+					margin-left: auto
+					text-align: center
+				+xs
+					padding: 0
+					margin-bottom: 10px
+			.hero-slider__img
+				+m
+					max-width: 200px
+					bottom: 0
+				+xs
+					max-width: 100px
+					position: static
+	&__wrapper
+		background-repeat: no-repeat
+		background-position: 0 0
+		background-size: 839px 378px
+		width: 840px
+		margin-left: auto
+		margin-right: auto
+		transform-origin: 50% 50%
+		+m
+			width: 600px
+			background-size: 600px 227px
+		+xs
+			width: 100%
+			background-size: 100% 100%
+	&__inner
+		min-height: 343px
+		padding-top: 21px
+		position: relative
+		+m
+			min-height: 203px
+		
+	&__title
+		text-align: center
+		margin-bottom: 30px
+
+	&__text
+		font-size: 28px
+		color: $black
+		margin-left: auto
+		text-align: center
+		margin-bottom: 57px
+		strong
+			font-weight: 700
+
+		+m
+			font-size: 16px
+	&__btn-block
+		margin-left: auto
+		width: 273px
+		+xs
+			width: auto
+		.btn
+			width: 100%
+			min-width: auto
+			margin: 6px	
+			+m
+				width: auto
+				margin: 4px
+
+	&__img
+		position: absolute
+	.slick-dots
+		position: absolute
+		text-align: center
+		width: 100%
+		left: 50%
+		transform: translateX(-50%)
+		bottom: 20px
+.heroPrev, .heroNext
+	cursor: pointer
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	z-index: 1
+	&:before
+		content: ''
+		position: absolute
+		top: -2px
+		bottom: -2px
+		right: -5px
+		left: -5px
+	svg
+		width: 12px
+		height: 19px
+		fill: $blue
+		+trans
+	&:hover
+		svg
+			fill: $orange4
+.heroPrev
+	+lg1920
+		left: 15%
+	+lg1700
+		left: 8%
+	+lg1400
+		left: 5%
+.heroNext
+	+lg1920
+		right: 15%
+	+lg1700
+		right: 8%
+	+lg1400
+		right: 5%

@@ -1,33 +1,41 @@
 <!--begin hero-->
 <div class="hero" style="background-image: url('img/hero-bg.jpg');">
-	<!--begin l-->
-	<div class="l">
-		<!--begin hero__inner-->
-		<div class="hero__inner">
-			<!--begin hero-slider-->
-			<div class="hero-slider js-hero-slider">
-				{% for test in hero %}
-				<div class="hero-slider__slide {{test.mod}}" style="background-image: url('img/{{test.bg}}');">
-					<h2 class="title-lg hero-slider__title">{{test.title}}</h2>
-					<div class="hero-slider__text">
-						<p>{{test.text | safe}}</p>
-					</div>
-					<div class="hero-slider__btn-block">
-						<div class="hero-slider__btn">
-							<a class="btn btn--shadow-border" href="#">{{test.btnText}}</a>
-						</div>
-					</div>
-					<img class="hero-slider__img" src="img/{{test.img}}.png" alt="alt">
-				</div>
-				{% endfor %}
-			</div>
-			<!--end hero-slider-->
 
+	<!--begin hero__inner-->
+	<div class="hero__inner">
+		<!--begin hero-slider-->
+		<div class="hero-slider js-hero-slider">
+			{% for test in hero %}
+			<div class="hero-slider__slide {{test.mod}}" >
+				<!--begin l-->
+				<div class="l">
+					<!--begin hero-slider__wrapper-->
+					<div class="hero-slider__wrapper" style="background-image: url('img/{{test.bg}}');">
+						<!--begin hero-slider__inner-->
+						<div class="hero-slider__inner">
+							<h2 class="title-lg hero-slider__title">{{test.title}}</h2>
+							<div class="hero-slider__text">
+								<p>{{test.text | safe}}</p>
+							</div>
+							<div class="hero-slider__btn-block">
+								<a class="btn btn--shadow-border" href="#"><span>{{test.btnText}}</span></a>
+							</div>
+							<img class="hero-slider__img" src="img/{{test.img}}.png" alt="alt">
+						</div>
+						<!--end hero-slider__inner-->
+					</div>
+					<!--end l-->
+					<!--end hero-slider__wrapper-->
+				</div>
+				<!--end l-->
+			</div>
+				<!--end hero-slider-->
+			{% endfor %}
 		</div>
-		<!--end hero__inner-->
-		
+
 	</div>
-	<!--end l-->
+	<!--end hero__inner-->
+
 	
 </div>
 <!--end hero-->

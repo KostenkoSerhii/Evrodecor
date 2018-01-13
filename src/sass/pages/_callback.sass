@@ -1,0 +1,59 @@
+.callback
+	margin-top: 100px
+	margin-bottom: 50px
+	position: relative
+	&__inner
+		max-width: 945px
+		margin-left: auto
+		margin-right: auto
+		border: 1px solid $blue
+		+clr
+		position: relative
+		padding-top: 20px
+		padding-bottom: 50px
+		+m
+			padding-bottom: 20px
+			display: flex
+			flex-wrap: wrap
+			padding-left: 10px
+			padding-right: 10px
+		&--pad-big
+			padding-top: 56px
+			padding-bottom: 24px
+			+m
+				padding-top: 25px
+				padding-bottom: 25px
+	&__left
+		float: left
+		width: percentage(437/945)
+		padding-top: 10px
+		+xs
+			float: none
+			width: 100%
+			order: 1
+			text-align: center
+		img
+			max-width: 100%
+			height: auto
+			+xs
+				max-width: 200px
+	&__right
+		width: percentage(508/945)
+		float: right
+		+xs
+			float: none
+			width: 100%
+			order: 0
+			margin-bottom: 0px
+	&--thanks
+		.callback__inner
+			+m
+				padding-bottom: 0
+		.callback__left
+			img
+				position: absolute
+				left: 0
+				bottom: 0
+				+m
+					position: relative
+					bottom: -5px

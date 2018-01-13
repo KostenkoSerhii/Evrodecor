@@ -5,11 +5,22 @@
 		display: flex
 		justify-content: space-between
 		align-items: flex-start
+		+m
+			flex-wrap: wrap
 	&__img
 		width: percentage(654/1140)
+		+m
+			flex-basis: 100%
+			order: 1
+			text-align: center
 		img
 			width: 100%
 			height: auto
+			+m
+				max-width: 100%
+				width: auto
+				margin-left: auto
+				margin-right: auto
 	&__descr
 		width: percentage(487/1140)
 		padding-left: 30px
@@ -17,9 +28,22 @@
 		padding-bottom: 44px
 		border-bottom: 2px solid $blue
 		min-height: 405px
+		+lg
+			padding-top: 0
+			padding-left: 15px
+			min-height: 310px
+			padding-bottom: 20px
+		+m
+			flex-basis: 100%
+			order: 0
+			min-height: auto
+			border-bottom: none
+
 	&__title
 		margin-bottom: 33px
 		position: relative
+		+lg
+			margin-bottom: 15px
 		&:after
 			content: ''
 			position: absolute
@@ -28,8 +52,15 @@
 			width: 30px
 			height: 2px
 			background-color: $blue-border
+			+lg
+				bottom: -8px
 	&__text
 		margin-bottom: 50px
+		+lg
+			font-size: 15px
+			margin-bottom: 20px
+		+m
+			font-size: 14p
 	&__btn-line
 		text-align: center
 		// .btn
@@ -39,6 +70,21 @@
 		right: 180px
 		bottom: 6px
 		transform: translateX(50%)
+		+lg
+			bottom: -10px
+		+m
+			position: static
+			transform: translateX(0%)
+			margin-left: auto
+			margin-right: auto
+			margin-top: 10px
+			text-align: center
+		// 	right: 50%
+		// 	bottom: -35px
+		// 	transform: translateX(50%)
+		// +xs
+		// 	bottom: -50px
+			
 .expPrev, .expNext
 	width: 42px
 	height: 42px
@@ -50,6 +96,10 @@
 	+trans
 	z-index: 2
 	background-color: $blue
+	+m
+		bottom: 50%
+		transform: translateY(50%)
+		display: none!important
 	svg
 		width: 12px
 		height: 19px
@@ -57,12 +107,10 @@
 	&:hover
 		background-color: $orange4
 .expPrev
-	// background-color: $orange4
 	right: 415px
-	// &:hover
-	// 	background-color: $blue
+	+lg
+		right: 360px
 .expNext
-	// background-color: $blue
 	right: 368px
-	// &:hover
-	// 	background-color: $orange4
+	+lg
+		right: 300px

@@ -7,15 +7,28 @@
 		display: flex
 		justify-content: space-between
 		align-items: flex-start
+		+m
+			display: block
+			+clr
 	&__logo
 		display: block
 		margin-top: 3px
+		+m
+			float: left
+			margin-bottom: 20px
 		img
 			width: 251px
-
 			height: 51px
+			+xs
+				width: 150px
+				height: auto
 	&__center
 		text-align: center
+		+m
+			float: right
+			margin-bottom: 20px
+		+xs
+			margin-top: 10px
 		svg
 			fill: $orange
 			font-size: 26px
@@ -23,6 +36,10 @@
 			display: inline-block
 			vertical-align: top
 			margin-top: 4px
+			+xs
+				font-size: 16px
+				margin-top: 0
+				margin-right: 2px
 		a
 			color: $black2
 			font-size: 36px
@@ -30,15 +47,30 @@
 			display: block
 			margin-bottom: 1px
 			line-height: 1
+			+xs
+				font-size: 16px
 		p
 			color: $blue
 			font-size: 17px
+			+xs
+				display: none
 	&__form
 		border: 1px solid $orange3
 		border-radius: 3px
 		padding: 3px
 		font-size: 0
 		margin-top: 3px
+
+		+m
+			clear: both
+			max-width: 359px
+			margin-left: auto
+			margin-right: auto
+		+xs
+			border: none
+			max-width: 100%
+			text-align: center
+
 		input
 			width: 190px
 			height: 42px
@@ -46,7 +78,7 @@
 			border-left: 1px solid $gray
 			border-top: 1px solid $gray
 			border-bottom: 1px solid $gray
-			border-radius: 2px
+			border-radius: 2px 0 0 2px
 			display: inline-block
 			vertical-align: top
 			line-height: 42px
@@ -55,3 +87,12 @@
 			color: $black
 			+placeholder
 				color: $gray
+			+xs
+				border: 1px solid $gray
+				border-radius: 2px
+				display: block
+				margin-left: auto
+				margin-right: auto
+				margin-bottom: 15px
+				
+		

@@ -1,27 +1,61 @@
-.pform
+.form
 	background-repeat: no-repeat
 	background-position: 0 0
 	&--bg-position
-			padding: 19px 2px 20px 25px
-			.pform__inner
-				padding-bottom: 26px
-				padding-top: 20px
-
+		padding: 19px 2px 20px 25px
+		+m
+			background-size: 100% 100%
+		.form__inner
+			padding-bottom: 26px
+			padding-top: 20px
+			+m
+				padding-left: 10px
+				padding-right: 10px
 	&__inner
 		background: $white
+		&--tac
+			text-align: center
 	&__text
 		font-size: 24px
 		margin-bottom: 32px
 		font-weight: 400
+		+m
+			font-size: 16px
+			margin-bottom: 15px
+		a
+			color: $black
+		&--mb-none
+			margin-bottom: 0
 	&__title
+		color: $blue-l
+		font-size: 36px
+		font-weight: 700
+		text-align: center
+		margin-bottom: 34px
+		&--sm
+			font-size: 30px
+		+m
+			font-size: 18px
+			margin-bottom: 20px
+	&__title-spec
+		color: $orange
+		font-size: 36px
+		font-weight: 700
+		margin-bottom: 10px
 	.btn
 		min-width: 273px
+		+m
+			min-width: 150px
 .field
 	width: 291px
 	margin-left: auto
 	margin-right: auto
 	margin-bottom: 28px
 	position: relative
+	+m
+		max-width: 291px
+		width: auto
+		margin-bottom: 15px
 	input
 		display: block
 		width: 100%
@@ -42,3 +76,5 @@
 			border-color: red
 	&--mb-big
 		margin-bottom: 43px
+		+m
+			margin-bottom: 25px

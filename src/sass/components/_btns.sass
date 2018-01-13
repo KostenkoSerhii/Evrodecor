@@ -1,26 +1,34 @@
 .btn
-	min-width: 161px
-	height: 42px
-	background-color: $orange2
-	border-radius: 1px
-	line-height: 42px
-	font-weight: 500
-	font-size: 18px
-	color: $white
-	padding-left: 10px
-	padding-right: 10px
-	background-image: linear-gradient(to top, #feae01 0%, #ffe402 100%)
 	display: inline-block
 	vertical-align: top
-	text-align: center
+	appearance: none
+	border: none
+	background: none
 	position: relative
+	span
+		display: block
+		min-width: 161px
+		height: 42px
+		background-color: $orange2
+		border-radius: 1px
+		line-height: 42px
+		font-weight: 500
+		font-size: 18px
+		color: $white
+		padding-left: 10px
+		padding-right: 10px
+		text-align: center
+		position: relative
+		z-index: 1
+		background-image: linear-gradient(to top, #feae01 0%, #ffe402 100%)
+		// +xs
+		// 	height: 25px
+		// 	min-width: 130px
+		// 	font-size: 16px
+		// 	line-height: 25px
 	+trans
 	&--shadow-border
-		height: 52px
-		line-height: 52px
 		margin: 4px
-		font-size: 24px
-		min-width: 263px
 		&:before
 			content: ''
 			position: absolute
@@ -31,11 +39,25 @@
 			background: $white
 			+trans
 			border-radius: 2px
-			z-index: -1
+			z-index: 0
 			box-shadow: 0 0 5px rgba(187, 186, 186, 0.75)
+		span
+			height: 52px
+			line-height: 52px
+			font-size: 24px
+			min-width: 263px
+			+xs
+				min-width: 150px
+				line-height: 42px
+				height: 42px
+				font-size: 18px
 		&:hover
 			&:before
 				top: 0px
 				bottom: 0px
 				left: 0px
 				right: 0px
+	&--mb
+		margin-bottom: 50px
+		+m
+			margin-bottom: 25px
