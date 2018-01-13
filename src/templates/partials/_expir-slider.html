@@ -1,0 +1,39 @@
+<section class="section section-exp-slider">
+	<!--begin l-->
+	<div class="l">
+		<h3 class="title-m "><strong>Огромный опыт</strong> работы</h3>
+		<!--begin section__inner-->
+		<div class="section__inner">
+			<!--begin expir-slider-->
+			<div class="expir-slider js-expir-slider">
+				{% for test in expSlider %}
+				<!--begin expir-slider__slide-->
+				<div class="expir-slider__slide">
+					<!--begin expir-slider__inner-->
+					<div class="expir-slider__inner">
+						<div class="expir-slider__img">
+							<img src="img/expir-imgs/ready/{{test.img}}.jpg" alt="alt">
+						</div>
+						<!--begin expir-slider__descr-->
+						<div class="expir-slider__descr">
+							<h4 class="title-sm expir-slider__title">{{test.title}}</h4>
+							<div class="expir-slider__text">
+								<p>{{test.text}}</p>
+							</div>
+							<div class="expir-slider__btn-line">
+								<a class="btn btn--shadow-border" href="#">Хочу такой же</a>
+							</div>
+						</div>
+						<!--end expir-slider__descr-->
+					</div>
+					<!--end expir-slider__inner-->
+				</div>
+				<!--end expir-slider__slide-->
+				{% endfor %}
+			</div>
+			<!--end expir-slider-->
+		</div>
+		<!--end section__inner-->
+	</div>
+	<!--end l-->
+</section>	

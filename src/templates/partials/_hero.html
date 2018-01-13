@@ -1,9 +1,27 @@
 <!--begin hero-->
-<div class="hero">
+<div class="hero" style="background-image: url('img/hero-bg.jpg');">
 	<!--begin l-->
 	<div class="l">
 		<!--begin hero__inner-->
 		<div class="hero__inner">
+			<!--begin hero-slider-->
+			<div class="hero-slider js-hero-slider">
+				{% for test in hero %}
+				<div class="hero-slider__slide {{test.mod}}" style="background-image: url('img/{{test.bg}}');">
+					<h2 class="title-lg hero-slider__title">{{test.title}}</h2>
+					<div class="hero-slider__text">
+						<p>{{test.text | safe}}</p>
+					</div>
+					<div class="hero-slider__btn-block">
+						<div class="hero-slider__btn">
+							<a class="btn btn--shadow-border" href="#">{{test.btnText}}</a>
+						</div>
+					</div>
+					<img class="hero-slider__img" src="img/{{test.img}}.png" alt="alt">
+				</div>
+				{% endfor %}
+			</div>
+			<!--end hero-slider-->
 
 		</div>
 		<!--end hero__inner-->

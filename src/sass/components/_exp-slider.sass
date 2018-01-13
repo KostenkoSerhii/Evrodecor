@@ -1,0 +1,68 @@
+.expir-slider
+	position: relative
+	&__slide
+	&__inner
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+	&__img
+		width: percentage(654/1140)
+		img
+			width: 100%
+			height: auto
+	&__descr
+		width: percentage(487/1140)
+		padding-left: 30px
+		padding-top: 32px
+		padding-bottom: 44px
+		border-bottom: 2px solid $blue
+		min-height: 405px
+	&__title
+		margin-bottom: 33px
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			bottom: -15px
+			left: 0
+			width: 30px
+			height: 2px
+			background-color: $blue-border
+	&__text
+		margin-bottom: 50px
+	&__btn-line
+		text-align: center
+		// .btn
+		// 	min-width: 263px
+	.slick-dots
+		position: absolute
+		right: 180px
+		bottom: 6px
+		transform: translateX(50%)
+.expPrev, .expNext
+	width: 42px
+	height: 42px
+	text-align: center
+	padding-top: 12px
+	position: absolute
+	bottom: 15px
+	cursor: pointer
+	+trans
+	z-index: 2
+	background-color: $blue
+	svg
+		width: 12px
+		height: 19px
+		fill: $white
+	&:hover
+		background-color: $orange4
+.expPrev
+	// background-color: $orange4
+	right: 415px
+	// &:hover
+	// 	background-color: $blue
+.expNext
+	// background-color: $blue
+	right: 368px
+	// &:hover
+	// 	background-color: $orange4

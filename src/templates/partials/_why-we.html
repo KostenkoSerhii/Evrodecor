@@ -1,0 +1,35 @@
+<section class="section why-we" style="background-image: url('img/why-we-bg.jpg');">
+	<!--begin l-->
+	<div class="l">
+		<h3 class="title-m why-we__title"><strong>Почему</strong> именно мы?</h3>
+		<!--begin why-we__inner-->
+		<div class="why-we__inner">
+			<!--begin why-we__img-->
+			<div class="why-we__img">
+				<img src="img/why-we.png" alt="alt">
+			</div>
+			<!--end why-we__img-->
+			<!--begin why-we__descr-->
+			<div class="why-we__descr">
+				<div class="why-we__list">
+					{% for test in why %}
+					<div class="why-we-block">
+						<h4 class="title-sm why-we-block__title">
+							{{test.title}}
+						</h4>
+						<div class="why-we-block__text">
+							<p>
+								{{test.text}}
+							</p>
+						</div>
+					</div>
+					{% endfor %}		
+				</div>
+				<div class="title-sm why-we__bottom-text">И умеем договариваться :)</div>
+			</div>
+			<!--end why-we__descr-->
+		</div>
+		<!--end why-we__inner-->
+	</div>
+	<!--end l-->
+</section>

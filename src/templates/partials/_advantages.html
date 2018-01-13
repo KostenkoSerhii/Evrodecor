@@ -1,7 +1,7 @@
 <section class="section section-advant section--pt-big ">
 	<!--begin l-->
 	<div class="l">
-		<h2 class="title-m title-m--mb-big"><strong>Преимущества</strong> натяжных потолков</h2>
+		<h3 class="title-m title-m--mb-big"><strong>Преимущества</strong> натяжных потолков</h3>
 		<!--begin advant-list-->
 		<div class="advant-list">
 			{% for test in advant  %}
@@ -12,7 +12,7 @@
 					<img src="img/{{test.img}}.svg" alt="alt">
 				</div>
 				<!--end advant-block__img-->
-				<h3 class="advant-block__title title-sm">{{test.title}}</h3>
+				<h4 class="advant-block__title title-sm">{{test.title}}</h4>
 				<p>{{test.text | safe}}</p>
 			</div>
 			<!--end advant-block-->
