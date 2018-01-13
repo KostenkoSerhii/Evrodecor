@@ -1,0 +1,80 @@
+=rob
+	font-family: 'Roboto', sans-serif
+
+=lg
+	@media only screen and (max-width: "1169px")
+		@content
+=lgmin
+	@media only screen and (min-width: "1170px")
+		@content
+=l
+	@media only screen and (max-width: "1023px")
+		@content
+=m
+	@media only screen and (max-width: "991px")
+		@content
+=xs
+	@media only screen and (max-width: "767px")
+		@content
+
+$white: #fff
+$black: #000
+$black2: #000101
+$blue: #165673
+$blue-l: #0180ba
+$blue-bg: #4275b8
+$blue-bg2: #fafafa
+$blue-border: #1076bb
+$gray: #979797
+$gray-border: #165673
+$orange: #fe7f02
+$orange2: #86abc4
+$orange3: #ffef02
+$orange-bg: #fff3cb
+
+
+
+
+
+a
+	text-decoration: none
+h1, h2, h3, h4, h5, h6
+	font-weight: normal
+body
+	background: $white
+	// +css-lock(16, 50, 600, 1000)
+	line-height: 1.2
+	font-size: 17px
+	+rob
+	font-weight: 300
+	+smooth-font
+	color: $black
+	+m
+		font-size: 14px
+.out
+	overflow: hidden
+.title-lg
+	color: $white
+	font-size: 48px
+	font-weight: 700
+.title-m
+	color: $blue
+	font-weight: 400
+	margin-bottom: 37px
+	text-align: center
+	letter-spacing: 2.5px
+	+m
+		letter-spacing: 1px
+	strong
+		font-weight: 700
+	&--mb-big
+		margin-bottom: 45px
+.title-sm
+	color: $orange
+	font-size: 24px
+	font-weight: 500
+
+.section
+	padding-top: 56px
+	&--pt-big
+		padding-top: 65px

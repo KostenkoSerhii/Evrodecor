@@ -1,0 +1,97 @@
+.tabs
+	&__nav
+		margin-bottom: 4px
+		text-align: center
+		font-size: 0
+		a
+			min-width: 262px
+			height: 47px
+			background-color: $orange
+			border-radius: 4px
+			margin-right: 31px
+			border: 2px solid $orange
+			display: inline-block
+			vertical-align: top
+			+trans
+			font-size: 22px
+			font-weight: 500
+			padding: 0px 10px
+			line-height: 44px
+			color: $white
+			&:last-of-type
+				margin-right: 0
+			&:hover
+				background-color: $white
+				color: $orange
+			&.is-active
+				background-color: $white
+				color: $orange
+	&__content
+		+lgmin
+			min-height: 481px
+	&__tab
+		display: none
+		&.is-open
+			display: block
+	&__inner
+		font-size: 0
+		.tabs__block
+			margin-right: 5%
+			&:last-of-type
+				margin-right: 0
+	&__block
+		// flex-basis: 344px
+		// flex-grow: 0
+		// flex-shrink: 1
+		display: inline-block
+		vertical-align: top
+		width: 30%
+
+		&--center
+			padding-top: 74px
+			position: relative
+			.tabs__img
+				margin-bottom: 36px
+	&__img
+		height: 295px
+		display: flex
+		justify-content: center
+		align-items: flex-end
+		margin-bottom: 10px
+		img
+			// width: 100%
+			max-width: 404px
+			max-height: 295px
+			height: auto
+	&__text-wrapper
+		position: relative
+		padding-top: 8px
+		padding-left: 31px
+		min-height: 76px
+		background-repeat: no-repeat
+		background-position: 0% 0%
+	&__text
+		background: $white
+		p
+			max-width: 311px
+			font-size: 17px
+			position: relative
+			padding-top: 6px
+			padding-bottom: 11px
+			padding-left: 10px
+			z-index: 1
+			// transform: skew(7deg)
+			+m
+				font-size: 14px
+
+	&__arrow-left, &__arrow-right
+		position: absolute
+		bottom: 32px
+	&__arrow-left
+		left: -36%
+		+lg
+			left: -50%
+	&__arrow-right
+		right: -36%
+		+lg
+			right: -50%

@@ -1,0 +1,43 @@
+<section class="section section-tabs">
+	<!--begin l-->
+	<div class="l">
+		<h2 class="title-m section-tabs__title"><strong>Натяжные потолки.</strong> Доступно!</h2>
+		<!--begin tabs-->
+		<div class="tabs js-tabs">
+			<!--begin tabs__nav-->
+			<div class="tabs__nav ">
+				<a class ="js-tabs-nav-link " href="#" data-target="tab1">Вот как у нас</a>
+				<a class ="js-tabs-nav-link is-active" href="#" data-target="tab2">Вот как у других</a>
+			</div>
+			<!--end tabs__nav-->
+			<!--begin tabs__content-->
+			<div class="tabs__content js-tabs-content">
+				<!--begin tabs__tab-->
+				<div class="tabs__tab js-tabs-item " data-content="tab1">
+					<!--begin tabs__inner-->
+					<div class="tabs__inner">
+						{% for test in tab2 %}
+						{% include "partials/_tab-content.html" %}
+						{% endfor %}
+					</div>
+					<!--end tabs__inner-->
+				</div>
+				<!--end tabs__tab-->
+				<!--begin tabs__tab-->
+				<div class="tabs__tab js-tabs-item is-open" data-content="tab2">
+					<!--begin tabs__inner-->
+					<div class="tabs__inner">
+						{% for test in tab1 %}
+						{% include "partials/_tab-content.html" %}
+						{% endfor %}
+					</div>
+					<!--end tabs__inner-->
+				</div>
+				<!--end tabs__tab-->
+			</div>
+			<!--end tabs__content-->
+		</div>
+		<!--end tabs-->
+	</div>
+	<!--end l-->
+</section>

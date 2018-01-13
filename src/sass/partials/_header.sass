@@ -1,0 +1,57 @@
+.header
+	padding-top: 17px
+	padding-bottom: 6px
+	border-bottom: 1px solid $gray-border
+	&__inner
+		position: relative
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+	&__logo
+		display: block
+		margin-top: 3px
+		img
+			width: 251px
+
+			height: 51px
+	&__center
+		text-align: center
+		svg
+			fill: $orange
+			font-size: 26px
+			margin-right: 10px
+			display: inline-block
+			vertical-align: top
+			margin-top: 4px
+		a
+			color: $black2
+			font-size: 36px
+			font-weight: 700
+			display: block
+			margin-bottom: 1px
+			line-height: 1
+		p
+			color: $blue
+			font-size: 17px
+	&__form
+		border: 1px solid $orange3
+		border-radius: 3px
+		padding: 3px
+		font-size: 0
+		margin-top: 3px
+		input
+			width: 190px
+			height: 42px
+			background-color: $white
+			border-left: 1px solid $gray
+			border-top: 1px solid $gray
+			border-bottom: 1px solid $gray
+			border-radius: 2px
+			display: inline-block
+			vertical-align: top
+			line-height: 42px
+			padding: 0 6px
+			font-size: 17px
+			color: $black
+			+placeholder
+				color: $gray

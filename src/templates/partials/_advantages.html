@@ -1,0 +1,25 @@
+<section class="section section-advant section--pt-big ">
+	<!--begin l-->
+	<div class="l">
+		<h2 class="title-m title-m--mb-big"><strong>Преимущества</strong> натяжных потолков</h2>
+		<!--begin advant-list-->
+		<div class="advant-list">
+			{% for test in advant  %}
+			<!--begin advant-block-->
+			<div class="advant-block">
+				<!--begin advant-block__img-->
+				<div class="advant-block__img">
+					<img src="img/{{test.img}}.svg" alt="alt">
+				</div>
+				<!--end advant-block__img-->
+				<h3 class="advant-block__title title-sm">{{test.title}}</h3>
+				<p>{{test.text | safe}}</p>
+			</div>
+			<!--end advant-block-->
+			{% endfor %}
+		</div>
+		<!--end advant-list-->
+		<img class="section-advant__global-img" src="img/advant-global.png" alt="alt">
+	</div>
+	<!--end l-->
+</section>

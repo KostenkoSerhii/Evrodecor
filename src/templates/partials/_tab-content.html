@@ -1,0 +1,19 @@
+<!--begin tabs__block-->
+<div class="tabs__block {{test.class}}" >
+	<div class="tabs__img">
+		<img src="img/{{test.img}}.png" alt="alt">
+	</div>
+	<div class="tabs__text-wrapper" style="background-image: url('img/tab-decor.png');" >
+
+		<span>{{test.number}}</span>
+		<div class="tabs__text">
+			<p>{{test.text}}</p>
+		</div>
+		
+	</div>
+	{% if test.class %}
+	<img class="tabs__arrow-left" src="img/tab-arrow1.png" alt="alt">
+	<img class="tabs__arrow-right" src="img/tab-arrow2.png" alt="alt">
+	{% endif %}
+</div>
+<!--end tabs__block-->
