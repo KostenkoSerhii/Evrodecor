@@ -1273,7 +1273,32 @@ body {
 }
 
 .care-section__title {
+  margin-bottom: 0;
+}
+
+.care-section__slider {
+  position: relative;
   margin-bottom: 23px;
+  min-height: 20px;
+}
+
+.care-section__slider p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.5s;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  opacity: 0;
+  -ms-transform: translate(-20px, -50px);
+  transform: translate(-20px, -50px);
+}
+
+.care-section__slider p.is-active {
+  opacity: 1;
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
 }
 
 .care-section__text {

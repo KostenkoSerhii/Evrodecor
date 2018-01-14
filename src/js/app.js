@@ -3,6 +3,7 @@ import heroSetTime from './components/heroSetTime.js';
 import counter from './components/counter.js';
 import tabs from './components/tabs.js';
 import sliders from './components/sliders.js';
+import careSlider from './components/care.js';
 import formSubmit from './components/form.js';
 import AOS from 'aos';
 // import scrollMagic from './components/scrollmagic.js';
@@ -31,7 +32,7 @@ $(document).ready(function(){
 	// before must be set day
 	sliders();
 	tabs();
-	// techAnimation();
+	careSlider();
 
 	AOS.init({
 		disable: 'mobile'
