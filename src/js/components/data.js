@@ -72,7 +72,7 @@
 		{minTime: 14, maxTime: 16, value: 4},
 		{minTime: 16, maxTime: 17, value: 5},
 		{minTime: 17, maxTime: 18, value: 6},
-		{minTime: 18, maxTime: 0, value: 0}
+		{minTime: 18, maxTime: 0, value: 6}
 		],
 		//1 - понедельник
 		[
