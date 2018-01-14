@@ -13,7 +13,7 @@
 			<div class="why-we__descr">
 				<div class="why-we__list">
 					{% for test in why %}
-					<div class="why-we-block">
+					<div class="why-we-block" data-aos="{{test.aos}}" data-aos-once="true">
 						<h4 class="title-sm why-we-block__title">
 							{{test.title}}
 						</h4>

@@ -9,7 +9,8 @@
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" media="all" href="css/app.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet"> </head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"> </head>
 
   <body>
     <!-- BEGIN content -->
@@ -33,7 +34,7 @@
             <!--end header__center-->
             <!--begin header__form-->
             <div class="header__form">
-              <form action=""> <input type="text" placeholder="Ваш телефон"> <button class="btn" type="submit"><span>Позвоните мне</span></button> </form>
+              <form action="mail.php"> <input type="text" placeholder="Ваш телефон" name="phone" pattern="[\+()]*(?:\d[\s\-\.()xX]*){10,14}" required> <button class="btn" type="submit"><span>Позвоните мне</span></button> </form>
             </div>
             <!--end header__form-->
           </div>
@@ -58,7 +59,7 @@
                     <div class="hero-slider__text">
                       <p>При заказе натяжных потолков <br> <strong>мы дарим вам светильники!</strong></p>
                     </div>
-                    <div class="hero-slider__btn-block"> <a class="btn btn--shadow-border" href="#"><span>Получить подарок!</span></a> </div> <img class="hero-slider__img" src="img/hero-img3.png" alt="alt"> </div>
+                    <div class="hero-slider__btn-block"> <a class="btn btn--shadow-border" href="page-callback.html"><span>Получить подарок!</span></a> </div> <img class="hero-slider__img" src="img/hero-img3.png" alt="alt"> </div>
                   <!--end hero-slider__inner-->
                 </div>
                 <!--end l-->
@@ -78,7 +79,7 @@
                     <div class="hero-slider__text">
                       <p>Только в<span class="js-hero-day"> понедельник</span><br> <strong>получи скидку 30%!</strong></p>
                     </div>
-                    <div class="hero-slider__btn-block"> <a class="btn btn--shadow-border" href="#"><span>Ограбить менеджера</span></a> </div> <img class="hero-slider__img" src="img/hero-img2.png" alt="alt"> </div>
+                    <div class="hero-slider__btn-block"> <a class="btn btn--shadow-border" href="page-callback.html"><span>Ограбить менеджера</span></a> </div> <img class="hero-slider__img" src="img/hero-img2.png" alt="alt"> </div>
                   <!--end hero-slider__inner-->
                 </div>
                 <!--end l-->
@@ -98,7 +99,7 @@
                     <div class="hero-slider__text">
                       <p>При заказе в вечернее и ночное время<br> <strong>дополнительная скидка!</strong></p>
                     </div>
-                    <div class="hero-slider__btn-block"> <a class="btn btn--shadow-border" href="#"><span>Не ждать утра!</span></a> </div> <img class="hero-slider__img" src="img/hero-img1.png" alt="alt"> </div>
+                    <div class="hero-slider__btn-block"> <a class="btn btn--shadow-border" href="page-callback.html"><span>Не ждать утра!</span></a> </div> <img class="hero-slider__img" src="img/hero-img1.png" alt="alt"> </div>
                   <!--end hero-slider__inner-->
                 </div>
                 <!--end l-->
@@ -119,7 +120,7 @@
           <!--begin advant-list-->
           <div class="advant-list">
             <!--begin advant-block-->
-            <div class="advant-block">
+            <div class="advant-block" data-aos="fade-up-right" data-aos-once="true">
               <!--begin advant-block__img-->
               <div class="advant-block__img"> <img src="img/advant1.svg" alt="alt"> </div>
               <!--end advant-block__img-->
@@ -128,7 +129,7 @@
             </div>
             <!--end advant-block-->
             <!--begin advant-block-->
-            <div class="advant-block">
+            <div class="advant-block" data-aos="fade-up" data-aos-once="true">
               <!--begin advant-block__img-->
               <div class="advant-block__img"> <img src="img/advant2.svg" alt="alt"> </div>
               <!--end advant-block__img-->
@@ -137,7 +138,7 @@
             </div>
             <!--end advant-block-->
             <!--begin advant-block-->
-            <div class="advant-block">
+            <div class="advant-block" data-aos="fade-up-left" data-aos-once="true">
               <!--begin advant-block__img-->
               <div class="advant-block__img"> <img src="img/advant3.svg" alt="alt"> </div>
               <!--end advant-block__img-->
@@ -146,7 +147,7 @@
             </div>
             <!--end advant-block-->
             <!--begin advant-block-->
-            <div class="advant-block">
+            <div class="advant-block" data-aos="fade-up-right" data-aos-once="true">
               <!--begin advant-block__img-->
               <div class="advant-block__img"> <img src="img/advant4.svg" alt="alt"> </div>
               <!--end advant-block__img-->
@@ -155,7 +156,7 @@
             </div>
             <!--end advant-block-->
             <!--begin advant-block-->
-            <div class="advant-block">
+            <div class="advant-block" data-aos="fade-up" data-aos-once="true">
               <!--begin advant-block__img-->
               <div class="advant-block__img"> <img src="img/advant5.svg" alt="alt"> </div>
               <!--end advant-block__img-->
@@ -164,7 +165,7 @@
             </div>
             <!--end advant-block-->
             <!--begin advant-block-->
-            <div class="advant-block">
+            <div class="advant-block" data-aos="fade-up-left" data-aos-once="true">
               <!--begin advant-block__img-->
               <div class="advant-block__img"> <img src="img/advant6.svg" alt="alt"> </div>
               <!--end advant-block__img-->
@@ -186,7 +187,7 @@
             <div class="tabs__nav "> <a class="js-tabs-nav-link is-active" href="#" data-target="tab1">Вот как у нас</a> <a class="js-tabs-nav-link " href="#" data-target="tab2">Вот как у других</a> </div>
             <!--end tabs__nav-->
             <!--begin tabs__content-->
-            <div class="tabs__content js-tabs-content">
+            <div class="tabs__content js-tabs-content" data-aos="fade-up" data-aos-once="true">
               <!--begin tabs__tab-->
               <div class="tabs__tab js-tabs-item is-open" data-content="tab1">
                 <!--begin tabs__inner-->
@@ -287,7 +288,7 @@
                     <div class="expir-slider__text">
                       <p>Потолки APPLY - это комбинация полотна с вырезами и цельного полотна. Между полотнами можно разместить led ленту, которая станет дополнительным источником ночного освещения.</p>
                     </div>
-                    <div class="expir-slider__btn-line"> <a class="btn btn--shadow-border" href="#"><span>Хочу такой же</span></a> </div>
+                    <div class="expir-slider__btn-line"> <a class="btn btn--shadow-border" href="page-callback.html"><span>Хочу такой же</span></a> </div>
                   </div>
                   <!--end expir-slider__descr-->
                 </div>
@@ -305,7 +306,7 @@
                     <div class="expir-slider__text">
                       <p>Сделайте свою кухню комфортной и вдохновляющей! Выбирайте натяжные потолки с фотопечатью. Получайте удовольствие от атмосферы своей кухни, и еда, которую вы готовите, станет еще вкуснее! </p>
                     </div>
-                    <div class="expir-slider__btn-line"> <a class="btn btn--shadow-border" href="#"><span>Хочу такой же</span></a> </div>
+                    <div class="expir-slider__btn-line"> <a class="btn btn--shadow-border" href="page-callback.html"><span>Хочу такой же</span></a> </div>
                   </div>
                   <!--end expir-slider__descr-->
                 </div>
@@ -323,7 +324,7 @@
                     <div class="expir-slider__text">
                       <p>Кажется, что этот потолок парит в воздухе, не касаясь стен. &quot;Парящий&quot; потолок подходит для всей квартиры и поможет зрительно увеличить высоту помещения.</p>
                     </div>
-                    <div class="expir-slider__btn-line"> <a class="btn btn--shadow-border" href="#"><span>Хочу такой же</span></a> </div>
+                    <div class="expir-slider__btn-line"> <a class="btn btn--shadow-border" href="page-callback.html"><span>Хочу такой же</span></a> </div>
                   </div>
                   <!--end expir-slider__descr-->
                 </div>
@@ -341,7 +342,7 @@
                     <div class="expir-slider__text">
                       <p>Выбирайте глянцевый натяжной потолок в ванную, гостинную или спальню. Он визуально увеличит высоту помещения, а так же сделает его ярче и светлее.</p>
                     </div>
-                    <div class="expir-slider__btn-line"> <a class="btn btn--shadow-border" href="#"><span>Хочу такой же</span></a> </div>
+                    <div class="expir-slider__btn-line"> <a class="btn btn--shadow-border" href="page-callback.html"><span>Хочу такой же</span></a> </div>
                   </div>
                   <!--end expir-slider__descr-->
                 </div>
@@ -360,7 +361,7 @@
                       <p>Зонировать пространство, визуально изменить геометрию комнаты, сберечь 3-5 см высоты потолка и соединить полотна разных цветов и фактур вам поможет декоративная спайка полотен. Выбирайте этот потолок, чтоб соединить разные цвета
                         на потолке в один уровень. </p>
                     </div>
-                    <div class="expir-slider__btn-line"> <a class="btn btn--shadow-border" href="#"><span>Хочу такой же</span></a> </div>
+                    <div class="expir-slider__btn-line"> <a class="btn btn--shadow-border" href="page-callback.html"><span>Хочу такой же</span></a> </div>
                   </div>
                   <!--end expir-slider__descr-->
                 </div>
@@ -378,7 +379,7 @@
                     <div class="expir-slider__text">
                       <p>Присмотритесь к сатиновым потолкам в гостинную, зал, спальню или детскую. Идеально ровные с легким шелковистым блеском обогатит вам интерьер. На выбор 112 цветов или фотопечать любого изображения.</p>
                     </div>
-                    <div class="expir-slider__btn-line"> <a class="btn btn--shadow-border" href="#"><span>Хочу такой же</span></a> </div>
+                    <div class="expir-slider__btn-line"> <a class="btn btn--shadow-border" href="page-callback.html"><span>Хочу такой же</span></a> </div>
                   </div>
                   <!--end expir-slider__descr-->
                 </div>
@@ -396,7 +397,7 @@
                     <div class="expir-slider__text">
                       <p>Почувствуйте свободу и простор, глядя на небо - потолок в вашей комнате. Фотопечать небесной лазури на матовом, глянцевом или саттиновом полотнах украсит вашу квартиру. Освещение и конструктив - выбирайте, чего душа желает. </p>
                     </div>
-                    <div class="expir-slider__btn-line"> <a class="btn btn--shadow-border" href="#"><span>Хочу такой же</span></a> </div>
+                    <div class="expir-slider__btn-line"> <a class="btn btn--shadow-border" href="page-callback.html"><span>Хочу такой же</span></a> </div>
                   </div>
                   <!--end expir-slider__descr-->
                 </div>
@@ -414,7 +415,7 @@
                     <div class="expir-slider__text">
                       <p>Фотопечать с эффектом 3D. Гости будут смотреть на него, затаив дыхание. Живое и объемное изображение притягивает взгляды, как магнит. О таком потолке вы мечтали? </p>
                     </div>
-                    <div class="expir-slider__btn-line"> <a class="btn btn--shadow-border" href="#"><span>Хочу такой же</span></a> </div>
+                    <div class="expir-slider__btn-line"> <a class="btn btn--shadow-border" href="page-callback.html"><span>Хочу такой же</span></a> </div>
                   </div>
                   <!--end expir-slider__descr-->
                 </div>
@@ -432,7 +433,7 @@
                     <div class="expir-slider__text">
                       <p>Парящая линия в ванной - идея для жизни! Яркость света можно регулировать. Просто поддерживать чистоту: нет плесени, пыли, конденсата. Выбирайте этот вариант если хотите ощущать простор и любоваться сиянием! </p>
                     </div>
-                    <div class="expir-slider__btn-line"> <a class="btn btn--shadow-border" href="#"><span>Хочу такой же</span></a> </div>
+                    <div class="expir-slider__btn-line"> <a class="btn btn--shadow-border" href="page-callback.html"><span>Хочу такой же</span></a> </div>
                   </div>
                   <!--end expir-slider__descr-->
                 </div>
@@ -451,7 +452,7 @@
                       <p>Потолок &quot;Звездное небо&quot; - для вашей спальни, гостинной или детской комнаты. Каждая звездочка горит ярко-ярко, а все вмете - космос, не меньше. Этот эффект мы создаем с помощью булавок starpins, оптоволокна и скрытой подсветки
                         по периметру потолка. Яркость регулируется. Идеально подходит, как замена ночника для маленького ребенка. </p>
                     </div>
-                    <div class="expir-slider__btn-line"> <a class="btn btn--shadow-border" href="#"><span>Хочу такой же</span></a> </div>
+                    <div class="expir-slider__btn-line"> <a class="btn btn--shadow-border" href="page-callback.html"><span>Хочу такой же</span></a> </div>
                   </div>
                   <!--end expir-slider__descr-->
                 </div>
@@ -477,37 +478,37 @@
             <!--begin why-we__descr-->
             <div class="why-we__descr">
               <div class="why-we__list">
-                <div class="why-we-block">
+                <div class="why-we-block" data-aos="fade-up-right" data-aos-once="true">
                   <h4 class="title-sm why-we-block__title"> Все включено </h4>
                   <div class="why-we-block__text">
                     <p> Выезд, замер и консультация — всегда бесплатно. И в удобное для вас время. </p>
                   </div>
                 </div>
-                <div class="why-we-block">
+                <div class="why-we-block" data-aos="fade-up-left" data-aos-once="true">
                   <h4 class="title-sm why-we-block__title"> Надежно, безопасно </h4>
                   <div class="why-we-block__text">
                     <p> Мы работаем официально, с гарантией качества своих услуг не только в устной форме&quot; </p>
                   </div>
                 </div>
-                <div class="why-we-block">
+                <div class="why-we-block" data-aos="fade-up-right" data-aos-once="true">
                   <h4 class="title-sm why-we-block__title"> Точно в срок </h4>
                   <div class="why-we-block__text">
                     <p> Соблюдаем заявленные сроки. Всегда! «Завтра» — это на следующий день и никак иначе </p>
                   </div>
                 </div>
-                <div class="why-we-block">
+                <div class="why-we-block" data-aos="fade-up-left" data-aos-once="true">
                   <h4 class="title-sm why-we-block__title"> Работаем руками </h4>
                   <div class="why-we-block__text">
                     <p> Наши сотрудники постоянно обучаются, за их работой ведется постоянный контроль качества </p>
                   </div>
                 </div>
-                <div class="why-we-block">
+                <div class="why-we-block" data-aos="fade-up-right" data-aos-once="true">
                   <h4 class="title-sm why-we-block__title"> Думаем головой </h4>
                   <div class="why-we-block__text">
                     <p> Мы всегда готовы ответить на ваши вопросы. Даже если потолки поставили вам давно, или не мы </p>
                   </div>
                 </div>
-                <div class="why-we-block">
+                <div class="why-we-block" data-aos="fade-up-left" data-aos-once="true">
                   <h4 class="title-sm why-we-block__title"> Чувствуем сердцем </h4>
                   <div class="why-we-block__text">
                     <p> Мы ценим наши с вами отношения. И прежде всего стараемся найти решение вашим потребностям </p>
@@ -527,17 +528,17 @@
         <div class="l">
           <h3 class="title-m reviews__title"><strong>Наши клиенты</strong> - счастливые люди</h3>
           <div class="reviews__list">
-            <div class="review">
+            <div class="review" data-aos="fade-up-right" data-aos-once="true">
               <div class="review__name">Елена</div>
               <div class="review__video"> <iframe src="https://www.youtube.com/embed/Jr-fSgxZxPU?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </div>
               <div class="review__stars"> <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg> <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg> <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>                <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg> <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg> </div>
             </div>
-            <div class="review">
+            <div class="review" data-aos="fade-up" data-aos-once="true">
               <div class="review__name">Владимир</div>
               <div class="review__video"> <iframe src="https://www.youtube.com/embed/bc2UQQNBQWw?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </div>
               <div class="review__stars"> <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg> <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg> <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>                <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg> <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg> </div>
             </div>
-            <div class="review">
+            <div class="review" data-aos="fade-up-left" data-aos-once="true">
               <div class="review__name">Елена</div>
               <div class="review__video"> <iframe src="https://www.youtube.com/embed/U6xldABx63A?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </div>
               <div class="review__stars"> <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg> <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg> <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>                <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg> <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg> </div>
@@ -557,7 +558,7 @@
                 <p>Узнайте ответы на этот и другие важные вопросы</p>
               </div>
               <div class="care-section__form">
-                <form action=""> <input type="text" placeholder="Ваш E-mail">
+                <form action="mail.php"> <input type="text" placeholder="Ваш E-mail" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                   <div class="care-section__btn"> <button class="btn btn--shadow-border" type="submit"><span>Узнать все!</span></button> </div>
                 </form>
               </div>
@@ -571,7 +572,7 @@
         <div class="l">
           <!--begin counter-block__inner-->
           <div class="counter-block__inner">
-            <div class="counter">
+            <div class="counter" data-aos="fade-up" data-aos-delay="0" data-aos-once="true">
               <div class="counter__text">
                 <p><strong>Запланировано</strong><br> замеров на сегодня</p>
               </div>
@@ -580,7 +581,7 @@
                 <div class="counter__count"><span>2</span></div>
               </div>
             </div>
-            <div class="counter">
+            <div class="counter" data-aos="fade-up" data-aos-delay="150" data-aos-once="true">
               <div class="counter__text">
                 <p><strong>Выполнено</strong><br> замеров сегодня</p>
               </div>
@@ -589,7 +590,7 @@
                 <div class="counter__count"><span>2</span></div>
               </div>
             </div>
-            <div class="counter">
+            <div class="counter" data-aos="fade-up" data-aos-delay="300" data-aos-once="true">
               <div class="counter__text">
                 <p><strong>Запланировано</strong><br> монтажей на сегодня</p>
               </div>
@@ -598,13 +599,13 @@
                 <div class="counter__count"><span>2</span></div>
               </div>
             </div>
-            <div class="counter">
+            <div class="counter" data-aos="fade-up" data-aos-delay="450" data-aos-once="true">
               <div class="counter__text">
                 <p><strong>Выполнено</strong><br> монтажей сегодня</p>
               </div>
               <div class="counter__numbers"> <span class="counter__count">2</span> <span class="counter__count">2</span> </div>
             </div>
-            <div class="counter">
+            <div class="counter" data-aos="fade-up" data-aos-delay="600" data-aos-once="true">
               <div class="counter__text">
                 <p><strong>Запланировано</strong><br> замеров на завтра</p>
               </div>
@@ -629,7 +630,7 @@
               <p>7 дней в неделю, 365 дней в году,<br> 36 525 дней в столетии <br> и даже в полнолуние :)</p>
             </div>
             <!--end superman-block__text--><img class="superman-block__img" src="img/superman.png" alt="alt">
-            <div class="superman-block__btn"> <a class="btn btn--shadow-border" href="#"><span>Вызвать замерщика</span></a> </div>
+            <div class="superman-block__btn"> <a class="btn btn--shadow-border" href="page-callback.html"><span>Вызвать замерщика</span></a> </div>
           </div>
           <!--end superman-block__inner-->
         </div>
@@ -646,10 +647,10 @@
             <div class="pre-footer__form">
               <div class="form  form--bg-position" style="background-image: url('img/form-decor.png');">
                 <div class="form__inner">
-                  <form action="">
+                  <form action="mail.php">
                     <p class="form__text"> Оставьте ваш телефон <br> и мы свяжемся с вами! </p>
-                    <div class="field"> <input type="text" placeholder="Ваше имя"> </div>
-                    <div class="field field--mb-big"> <input type="text" placeholder="Ваш телефон"> </div> <button class="btn  btn--shadow-border form__btn" type="submit"><span>Позвоните мне</span></button> </form>
+                    <div class="field"> <input type="text" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-яЁё]{,20}" name="name" required> </div>
+                    <div class="field field--mb-big"> <input type="text" placeholder="Ваш телефон" name="phone" pattern="[\+()]*(?:\d[\s\-\.()xX]*){10,14}" required> </div> <button class="btn  btn--shadow-border form__btn" type="submit"><span>Позвоните мне</span></button> </form>
                 </div>
               </div>
             </div>

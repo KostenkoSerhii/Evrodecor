@@ -5,16 +5,16 @@
 			<div class="pre-footer__form">
 				<div class="form  form--bg-position" style="background-image: url('img/form-decor.png');">
 					<div class="form__inner">
-						<form action="">
+						<form action="mail.php">
 							<p class="form__text">
 								Оставьте ваш телефон <br>
 								и мы свяжемся с вами!
 							</p>
 							<div class="field">
-								<input type="text" placeholder="Ваше имя">
+								<input type="text" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-яЁё]{,20}" name="name" required>
 							</div>
 							<div class="field field--mb-big">
-								<input type="text" placeholder="Ваш телефон">
+								<input type="text" placeholder="Ваш телефон" name="phone" pattern="[\+()]*(?:\d[\s\-\.()xX]*){10,14}" required>
 							</div>
 							<button class="btn  btn--shadow-border form__btn" type="submit"><span>Позвоните мне</span></button>
 						</form>

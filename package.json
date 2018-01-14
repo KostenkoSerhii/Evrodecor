@@ -9,6 +9,7 @@
   },
   "authors": "Coderiver <html@coderiver.com.ua>",
   "devDependencies": {
+    "aos": "^2.2.0",
     "autoprefixer": "^6.3.3",
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.1",

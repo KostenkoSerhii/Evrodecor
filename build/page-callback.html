@@ -33,7 +33,7 @@
             <!--end header__center-->
             <!--begin header__form-->
             <div class="header__form">
-              <form action=""> <input type="text" placeholder="Ваш телефон"> <button class="btn" type="submit"><span>Позвоните мне</span></button> </form>
+              <form action="mail.php"> <input type="text" placeholder="Ваш телефон" name="phone" pattern="[\+()]*(?:\d[\s\-\.()xX]*){10,14}" required> <button class="btn" type="submit"><span>Позвоните мне</span></button> </form>
             </div>
             <!--end header__form-->
           </div>
@@ -58,9 +58,10 @@
                   <!--begin form__inner-->
                   <div class="form__inner form__inner--tac">
                     <h1 class="form__title">Вы в минуте от потолков своей мечты!</h1>
-                    <div class="field"> <input type="text" placeholder="Ваше имя"> </div>
-                    <div class="field field--mb-big"> <input type="text" placeholder="Ваш телефон"> </div> <button class="btn  btn--shadow-border btn--mb" type="submit"><span>Позвоните мне</span></button>
-                    <div class="form__text form__text--mb-none"> В течении часа мы перезвоним <br> и договоримся о дальнейших <br> действиях! Вы на верном пути! :) </div>
+                    <div class="field"> <input type="text" placeholder="Ваше имя" name="name" pattern="[A-Za-zА-Яа-яЁё]{,20}" required> </div>
+                    <div class="field field--mb-big"> <input type="text" placeholder="Ваш телефон" name="phone" pattern="[\+()]*(?:\d[\s\-\.()xX]*){10,14}" required> </div> <button class="btn  btn--shadow-border btn--mb" type="submit"><span>Позвоните мне</span></button>
+                    <div class="form__text form__text--mb-none">
+                    В течении часа мы перезвоним <br> и договоримся о дальнейших <br> действиях! Вы на верном пути! :) </div>
                   </div>
                   <!--end form__inner-->
                 </form>
