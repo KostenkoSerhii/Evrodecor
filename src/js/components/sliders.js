@@ -30,10 +30,17 @@ function sliders(){
 		prevArrow: heroPrev,
 		nextArrow: heroNext,
 		dots: true,
+		autoplay: true,
+		autoplaySpeed: 4000,
+		pauseOnFocus: false,
+		pauseOnHover: false,
 		responsive: [
 		{
 			breakpoint: 992,
-			settings: "unslick"
+			settings: {
+				infinite: true,
+				arrows: false
+			}
 		}
 		]
 	});
@@ -45,7 +52,23 @@ function sliders(){
 		nextArrow: expNext,
 		dots: true
 
-	});
+	});	
+
+	// $(".js-review-list").slick({
+	// 	infinite: true,
+	// 	slidesToShow: 3,
+	// 	slidesToScroll: 3,
+	// 	vertical: true,
+	// 	centerMode: true,
+	// 	responsive: [
+	// 	{
+	// 		breakpoint: 992,
+	// 		settings: {
+	// 			verticalSwiping: true
+	// 		}
+	// 	}
+	// 	]
+	// });
 
 	//end
 };

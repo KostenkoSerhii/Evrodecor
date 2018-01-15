@@ -2,48 +2,32 @@
 	<!--begin l-->
 	<div class="l">
 		<h3 class="title-m reviews__title"><strong>Наши клиенты</strong> - счастливые люди</h3>
-		<div class="reviews__list">
-
-			<div class="review" data-aos="fade-up-right" data-aos-once="true">
-				<div class="review__name">Елена</div>
-				<div class="review__video">
-					<iframe  src="https://www.youtube.com/embed/Jr-fSgxZxPU?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-				</div>
-				<div class="review__stars">
-					{{mixins.icon('star')}}
-					{{mixins.icon('star')}}
-					{{mixins.icon('star')}}
-					{{mixins.icon('star')}}
-					{{mixins.icon('star')}}
-				</div>
+		<div class="reviews__list js-review-list">
+			<div class="reviews__group is-active js-review-group">
+				{% for test in reviewsPart1 %}
+				{% include "partials/_reviewItem.html" %}
+				{% endfor %}
 			</div>
-			<div class="review" data-aos="fade-up" data-aos-once="true">
-				<div class="review__name">Владимир</div>
-				<div class="review__video">
-					<iframe  src="https://www.youtube.com/embed/bc2UQQNBQWw?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-				</div>
-				<div class="review__stars">
-					{{mixins.icon('star')}}
-					{{mixins.icon('star')}}
-					{{mixins.icon('star')}}
-					{{mixins.icon('star')}}
-					{{mixins.icon('star')}}
-				</div>
+			<div class="reviews__group  js-review-group">
+				{% for test in reviewsPart2 %}
+				{% include "partials/_reviewItem.html" %}
+				{% endfor %}
 			</div>
-			<div class="review" data-aos="fade-up-left" data-aos-once="true">
-				<div class="review__name">Елена</div>
-				<div class="review__video">
-					<iframe  src="https://www.youtube.com/embed/U6xldABx63A?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-				</div>
-				<div class="review__stars">
-					{{mixins.icon('star')}}
-					{{mixins.icon('star')}}
-					{{mixins.icon('star')}}
-					{{mixins.icon('star')}}
-					{{mixins.icon('star')}}
-				</div>
+			<div class="reviews__group js-review-group">
+				{% for test in reviewsPart3 %}
+				{% include "partials/_reviewItem.html" %}
+				{% endfor %}
+			</div>
+			<div class="reviews__group js-review-group">
+				{% for test in reviewsPart4 %}
+				{% include "partials/_reviewItem.html" %}
+				{% endfor %}
 			</div>
 		</div>
+		<div class="reviews__btn-block">
+			<a class="btn btn--shadow-border js-review-toggler" href="#"><span>Еще отзывы</span></a>
+		</div>
+
 	</div>
 	<!--end l-->
 

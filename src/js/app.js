@@ -5,6 +5,7 @@ import tabs from './components/tabs.js';
 import sliders from './components/sliders.js';
 import careSlider from './components/care.js';
 import formSubmit from './components/form.js';
+import reviewsSlider from './components/reviewsSlider.js';
 import AOS from 'aos';
 // import scrollMagic from './components/scrollmagic.js';
 // import techAnimation from './components/tech-animation.js';
@@ -32,6 +33,7 @@ $(document).ready(function(){
 	// before must be set day
 	sliders();
 	tabs();
+	reviewsSlider();
 	careSlider();
 
 	AOS.init({

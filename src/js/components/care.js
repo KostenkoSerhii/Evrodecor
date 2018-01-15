@@ -1,6 +1,6 @@
 import {isResp1169} from './global.js';
 function careSlider(){
-	if(isResp1169()) return;
+	// if(isResp1169()) return;
 	let careSlider = $('.js-care-slider');
 	let sliderItem = careSlider.find("p");
 	let sliderItemLength = sliderItem.length;
