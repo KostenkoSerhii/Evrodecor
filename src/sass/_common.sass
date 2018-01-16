@@ -24,6 +24,9 @@
 =m
 	@media only screen and (max-width: "991px")
 		@content
+=mmin
+	@media only screen and (min-width: "992px")
+		@content
 =xs
 	@media only screen and (max-width: "767px")
 		@content
@@ -68,6 +71,15 @@ body
 		font-size: 14px
 .out
 	overflow: hidden
+.title-biggest
+	text-align: center
+	color: $blue
+	font-size: 52px
+	font-weight: 700
+	+m
+		font-size: 24px
+	+xs
+		font-size: 20px
 .title-lg
 	color: $white
 	font-size: 48px

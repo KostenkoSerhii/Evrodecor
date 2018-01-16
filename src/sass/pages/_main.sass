@@ -18,7 +18,8 @@
 		&.slick-active
 			background: $orange4
 		&:hover
-			background: $orange4
+			+mmin
+				background: $orange4
 		button
 			display: none
 
@@ -81,10 +82,17 @@
 	padding-bottom: 55px
 	&__title
 .section-exp-slider
-	padding-bottom: 64px
+	
 	border-bottom: 1px solid $blue
 	+m
 		padding-bottom: 30px
+	.l
+		max-width: 1264px
+		padding-left: 60px
+		padding-right: 60px
+		+m
+			padding-left: 15px
+			padding-right: 15px
 .why-we
 	+cover
 	background-color: $orange-bg

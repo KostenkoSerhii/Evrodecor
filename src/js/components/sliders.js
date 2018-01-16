@@ -50,7 +50,16 @@ function sliders(){
 		slidesToScroll: 1,
 		prevArrow: expPrev,
 		nextArrow: expNext,
-		dots: true
+		dots: true,
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				infinite: true,
+				arrows: false
+			}
+		}
+		]
 
 	});	
 

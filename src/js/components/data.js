@@ -273,37 +273,43 @@
 		//1 - понедельник
 		[
 		{minTime: 0, maxTime: 9, value: 0},
-		{minTime: 9, maxTime: 0, value: 2}
+		{minTime: 9, maxTime: 19, value: 2},
+		{minTime: 19, maxTime: 21, value: 3},
+		{minTime: 21, maxTime: 0, value: 4}
 		],
 		//2 - вторник
 		[
 		{minTime: 0, maxTime: 12, value: 0},
-		{minTime: 12, maxTime: 16, value: 2},
-		{minTime: 15, maxTime: 0, value: 5}
+		{minTime: 12, maxTime: 19, value: 2},
+		{minTime: 19, maxTime: 21, value: 4},
+		{minTime: 21, maxTime: 0, value: 5}
 		],
 		//3 - среда
 		[
-		{minTime: 0, maxTime: 12, value: 0},
-		{minTime: 12, maxTime: 19, value: 3},
-		{minTime: 20, maxTime: 0, value: 6}
+		{minTime: 0, maxTime: 14, value: 0},
+		{minTime: 14, maxTime: 19, value: 3},
+		{minTime: 19, maxTime: 21, value: 5},
+		{minTime: 21, maxTime: 0, value: 6}
 		],
 		//4 - четверг
 		[
 		{minTime: 0, maxTime: 9, value: 0},
 		{minTime: 9, maxTime: 15, value: 1},
-		{minTime: 15, maxTime: 0, value: 3}
+		{minTime: 15, maxTime: 21, value: 2},
+		{minTime: 21, maxTime: 0, value: 3}
 		],
 		//5 - пятница
 		[
 		{minTime: 0, maxTime: 12, value: 0},
-		{minTime: 12, maxTime: 15, value: 3},
-		{minTime: 15, maxTime: 0, value: 4}
+		{minTime: 12, maxTime: 21, value: 3},
+		{minTime: 21, maxTime: 0, value: 4}
 		],
 		//6 - суббота
 		[
 		{minTime: 0, maxTime: 12, value: 0},
 		{minTime: 12, maxTime: 19, value: 2},
-		{minTime: 20, maxTime: 0, value: 6}
+		{minTime: 19, maxTime: 21, value: 5},
+		{minTime: 21, maxTime: 0, value: 6}
 		]
 		];
 		export {zamerPlanningToday, zamerDoneToday, zamerPlanningNextDay, montazPlanningToday, montazDoneToday};

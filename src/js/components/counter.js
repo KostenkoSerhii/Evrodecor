@@ -26,7 +26,7 @@
 			parseObj(counterArr[day], $item)
 		});
 		function parseObj(arr, item){
-			// hour =10;
+			// hour =21;
 
 			for (let i = 0; i < arr.length; i++) {
 				let lastVeiw = arr[i].maxTime == 0 ? true: false;

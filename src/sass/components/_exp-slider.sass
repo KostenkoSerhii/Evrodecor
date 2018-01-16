@@ -1,5 +1,10 @@
 .expir-slider
 	position: relative
+	padding-bottom: 4px
+	margin-bottom: 60px
+	border-bottom: 2px solid $blue
+	+m
+		margin-bottom: 40px
 	&__slide
 	&__inner
 		display: flex
@@ -26,18 +31,18 @@
 		padding-left: 30px
 		padding-top: 32px
 		padding-bottom: 44px
-		border-bottom: 2px solid $blue
-		min-height: 405px
+		// border-bottom: 2px solid $blue
+		// min-height: 405px
 		+lg
 			padding-top: 0
 			padding-left: 15px
-			min-height: 310px
+			// min-height: 310px
 			padding-bottom: 20px
 		+m
 			flex-basis: 100%
 			order: 0
-			min-height: auto
-			border-bottom: none
+			// min-height: auto
+			// border-bottom: none
 
 	&__title
 		margin-bottom: 33px
@@ -67,18 +72,22 @@
 		// 	min-width: 263px
 	.slick-dots
 		position: absolute
-		right: 180px
-		bottom: 6px
-		transform: translateX(50%)
-		+lg
-			bottom: -10px
+		bottom: -40px
+		transform: translateX(-50%)
+		left: 50%
+		// right: 180px
+		// +lg
+		// 	bottom: -10px
 		+m
-			position: static
-			transform: translateX(0%)
+			// position: static
+			// transform: translateX(0%)
+			bottom: -50px
 			margin-left: auto
 			margin-right: auto
 			margin-top: 10px
 			text-align: center
+		+xs
+			bottom: -70px
 		// 	right: 50%
 		// 	bottom: -35px
 		// 	transform: translateX(50%)
@@ -91,8 +100,10 @@
 	text-align: center
 	padding-top: 12px
 	position: absolute
-	bottom: 15px
+	// bottom: 15px
 	cursor: pointer
+	top: 50%
+	transform: translateY(-50%)
 	+trans
 	z-index: 2
 	background-color: $blue
@@ -107,10 +118,10 @@
 	&:hover
 		background-color: $orange4
 .expPrev
-	right: 415px
-	+lg
-		right: 360px
+	left: -55px
+	// +lg
+	// 	right: 360px
 .expNext
-	right: 368px
-	+lg
-		right: 300px
+	right: -55px
+	// +lg
+	// 	right: 300px

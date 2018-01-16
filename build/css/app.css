@@ -169,6 +169,13 @@ body {
   overflow: hidden;
 }
 
+.title-biggest {
+  text-align: center;
+  color: #165673;
+  font-size: 52px;
+  font-weight: 700;
+}
+
 .title-lg {
   color: #fff;
   font-size: 48px;
@@ -407,6 +414,7 @@ body {
 .hero {
   border-bottom: 1px solid #165673;
   background-color: #ffedba;
+  padding-top: 50px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -833,6 +841,9 @@ body {
 
 .expir-slider {
   position: relative;
+  padding-bottom: 4px;
+  margin-bottom: 60px;
+  border-bottom: 2px solid #165673;
 }
 
 .expir-slider__inner {
@@ -858,8 +869,6 @@ body {
   padding-left: 30px;
   padding-top: 32px;
   padding-bottom: 44px;
-  border-bottom: 2px solid #165673;
-  min-height: 405px;
 }
 
 .expir-slider__title {
@@ -887,10 +896,10 @@ body {
 
 .expir-slider .slick-dots {
   position: absolute;
-  right: 180px;
-  bottom: 6px;
-  -ms-transform: translateX(50%);
-  transform: translateX(50%);
+  bottom: -40px;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  left: 50%;
 }
 
 .expPrev, .expNext {
@@ -899,8 +908,10 @@ body {
   text-align: center;
   padding-top: 12px;
   position: absolute;
-  bottom: 15px;
   cursor: pointer;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   transition: all 0.2s ease;
   z-index: 2;
   background-color: #165673;
@@ -917,11 +928,11 @@ body {
 }
 
 .expPrev {
-  right: 415px;
+  left: -55px;
 }
 
 .expNext {
-  right: 368px;
+  right: -55px;
 }
 
 .form {
@@ -1044,10 +1055,6 @@ body {
   background: #febb01;
 }
 
-.slick-dots li:hover {
-  background: #febb01;
-}
-
 .slick-dots li button {
   display: none;
 }
@@ -1124,8 +1131,13 @@ body {
 }
 
 .section-exp-slider {
-  padding-bottom: 64px;
   border-bottom: 1px solid #165673;
+}
+
+.section-exp-slider .l {
+  max-width: 1264px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .why-we {
@@ -1579,6 +1591,12 @@ body {
   bottom: 0;
 }
 
+@media only screen and (min-width: 992px){
+  .slick-dots li:hover{
+    background: #febb01;
+  }
+}
+
 @media only screen and (min-width: 1170px){
   .tabs__content{
     min-height: 481px;
@@ -1664,7 +1682,6 @@ body {
   .expir-slider__descr{
     padding-top: 0;
     padding-left: 15px;
-    min-height: 310px;
     padding-bottom: 20px;
   }
   .expir-slider__title{
@@ -1676,15 +1693,6 @@ body {
   .expir-slider__text{
     font-size: 15px;
     margin-bottom: 20px;
-  }
-  .expir-slider .slick-dots{
-    bottom: -10px;
-  }
-  .expPrev{
-    right: 360px;
-  }
-  .expNext{
-    right: 300px;
   }
   .section-advant__global-img{
     display: none;
@@ -1730,6 +1738,9 @@ body {
   body{
     font-size: 14px;
   }
+  .title-biggest{
+    font-size: 24px;
+  }
   .title-lg{
     font-size: 20px;
   }
@@ -1773,7 +1784,10 @@ body {
     margin-right: auto;
   }
   .hero{
-    padding-top: 30px;
+    padding-top: 20px;
+  }
+  .hero .title-biggest{
+    margin-bottom: 20px;
   }
   .hero-slider__slide{
     min-height: auto;
@@ -1871,6 +1885,9 @@ body {
   .tabs__arrow-left, .tabs__arrow-right{
     display: none;
   }
+  .expir-slider{
+    margin-bottom: 40px;
+  }
   .expir-slider__inner{
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -1893,16 +1910,12 @@ body {
     flex-basis: 100%;
     -ms-flex-order: 0;
     order: 0;
-    min-height: auto;
-    border-bottom: none;
   }
   .expir-slider__text{
     font-size: 14p;
   }
   .expir-slider .slick-dots{
-    position: static;
-    -ms-transform: translateX(0%);
-    transform: translateX(0%);
+    bottom: -50px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
@@ -1948,6 +1961,10 @@ body {
   }
   .section-exp-slider{
     padding-bottom: 30px;
+  }
+  .section-exp-slider .l{
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .why-we__inner{
     padding-left: 0;
@@ -2087,6 +2104,9 @@ body {
 }
 
 @media only screen and (max-width: 767px){
+  .title-biggest{
+    font-size: 20px;
+  }
   .title-lg{
     font-size: 18px;
   }
@@ -2148,6 +2168,9 @@ body {
     line-height: 42px;
     height: 42px;
     font-size: 18px;
+  }
+  .expir-slider .slick-dots{
+    bottom: -70px;
   }
   .slick-dots{
     text-align: center;
