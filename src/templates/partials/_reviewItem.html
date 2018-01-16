@@ -1,7 +1,7 @@
 				<div class="review {{test.mod}}" {% if test.aos %} data-aos="{{test.aosFade}}" data-aos-once="true" {% endif %}>
 					<div class="review__name">{{test.name}}</div>
 					<div class="review__video">
-						<iframe  src="{{test.url}}&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						<iframe  src="{{test.url}}?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					</div>
 					<div class="review__stars">
 						{{mixins.icon('star')}}
