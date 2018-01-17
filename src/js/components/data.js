@@ -18,10 +18,9 @@
 		{minTime: 0, maxTime: 11, value: 10},
 		{minTime: 11, maxTime: 12, value: 12},
 		{minTime: 12, maxTime: 13, value: 13},
-		{minTime: 13, maxTime: 15, value: 14},
-		{minTime: 15, maxTime: 16, value: 15},
-		{minTime: 16, maxTime: 17, value: 17},
-		{minTime: 17, maxTime: 0, value: 19}
+		{minTime: 13, maxTime: 14, value: 14},
+		{minTime: 14, maxTime: 16, value: 16},
+		{minTime: 16, maxTime: 0, value: 19}
 		],
 		//3 - среда
 		[
@@ -100,7 +99,7 @@
 		{minTime: 11, maxTime: 12, value: 10},
 		{minTime: 12, maxTime: 13, value: 11},
 		{minTime: 13, maxTime: 14, value: 13},
-		{minTime: 14, maxTime: 16, value: 15},
+		{minTime: 14, maxTime: 16, value: 14},
 		{minTime: 16, maxTime: 17, value: 16},
 		{minTime: 17, maxTime: 19, value: 17},
 		{minTime: 19, maxTime: 0, value: 19}
@@ -301,7 +300,8 @@
 		//5 - пятница
 		[
 		{minTime: 0, maxTime: 12, value: 0},
-		{minTime: 12, maxTime: 21, value: 3},
+		{minTime: 12, maxTime: 19, value: 2},
+		{minTime: 19, maxTime: 21, value: 3},
 		{minTime: 21, maxTime: 0, value: 4}
 		],
 		//6 - суббота
