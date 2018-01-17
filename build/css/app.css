@@ -169,10 +169,10 @@ body {
   overflow: hidden;
 }
 
-.title-biggest {
+.title-main {
   text-align: center;
   color: #165673;
-  font-size: 52px;
+  font-size: 36px;
   font-weight: 700;
 }
 
@@ -900,6 +900,14 @@ body {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   left: 50%;
+}
+
+.expir-slider .heroPrev {
+  left: -40px;
+}
+
+.expir-slider .heroNext {
+  right: -40px;
 }
 
 .expPrev, .expNext {
@@ -1738,8 +1746,9 @@ body {
   body{
     font-size: 14px;
   }
-  .title-biggest{
-    font-size: 24px;
+  .title-main{
+    font-size: 20px;
+    margin-bottom: 20px;
   }
   .title-lg{
     font-size: 20px;
@@ -1785,9 +1794,6 @@ body {
   }
   .hero{
     padding-top: 20px;
-  }
-  .hero .title-biggest{
-    margin-bottom: 20px;
   }
   .hero-slider__slide{
     min-height: auto;
@@ -2104,8 +2110,8 @@ body {
 }
 
 @media only screen and (max-width: 767px){
-  .title-biggest{
-    font-size: 20px;
+  .title-main{
+    font-size: 18px;
   }
   .title-lg{
     font-size: 18px;

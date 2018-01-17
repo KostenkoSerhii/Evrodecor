@@ -48,8 +48,8 @@ function sliders(){
 		infinite: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		prevArrow: expPrev,
-		nextArrow: expNext,
+		prevArrow: heroPrev,
+		nextArrow: heroNext,
 		dots: true,
 		responsive: [
 		{
