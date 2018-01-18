@@ -13,8 +13,9 @@ import slick from 'slick-carousel';
 
 $(document).ready(function(){
 	svgUseIt();
-	let date = new Date()
+	let date = new Date();
 	let day = date.getDay();
+	let hour = date.getHours();
 	const days = [
 	'воскресенье',
 	'понедельник',
@@ -24,9 +25,13 @@ $(document).ready(function(){
 	'пятница',
 	'суббота',
 	];
-	let hour = date.getHours();
-	// console.log(day);
-	// console.log(days);
+
+	// hour = 15;
+
+	// setTimeout(function(){
+	// 	hour = 21
+	// }, 10000)
+
 
 	heroSetTime(day, hour);
 	
@@ -41,6 +46,21 @@ $(document).ready(function(){
 	});
 	counter(day, hour);
 	formSubmit()
+
+	setInterval(function(){
+		let locDate = new Date();
+		let locDay = date.getDay();
+		let locHour = date.getHours();
+		if(locDay != day || locHour != hour ){
+			heroSetTime(day, hour);
+			counter(day, hour);
+			day = locDay;
+			hour = locHour;
+
+			// console.log('not coincidence');
+		}
+		// console.log('coincidence');
+	}, 30000)
 	//end
 });
 
