@@ -70,5 +70,15 @@
   </script>
   <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA04VMqMvV-ifF4mtvOnsUkf3Lw9F9ivAg&callback=initMap"
   type="text/javascript"></script>
+  <script type="text/javascript">
+    (function(d, w, s) {
+      var windowW = window.innerWidth;
+      if(windowW < 1024) return; 
+      var widgetHash = '22828', gcw = d.createElement(s); gcw.type = 'text/javascript'; gcw.async = true;
+      gcw.src = '//widgets.binotel.com/getcall/widgets/'+ widgetHash +'.js';
+      var sn = d.getElementsByTagName(s)[0]; sn.parentNode.insertBefore(gcw, sn);
+    })(document, window, 'script');
+  </script>
+
 </body>
 </html>

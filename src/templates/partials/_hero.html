@@ -2,7 +2,7 @@
 <div class="hero" style="background-image: url('img/hero-bg.jpg');">
 	<!--begin l-->
 	<div class="l">
-		<h1 class="title-main">Натяжные потолки в Киеве и области</h1>
+		<h1 class="title-main">Дарим потолок</h1>
 	</div>
 	<!--end l-->
 
@@ -26,6 +26,9 @@
 								<a class="btn btn--shadow-border" href="page-callback.html"><span>{{test.btnText}}</span></a>
 							</div>
 							<img class="hero-slider__img" src="img/{{test.img}}.png" alt="alt">
+							{% if test.secImg %}
+							<img class="hero-slider__img-sec" src="img/{{test.secImg}}.png" alt="alt">
+							{% endif %}
 						</div>
 						<!--end hero-slider__inner-->
 					</div>

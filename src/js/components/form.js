@@ -1,4 +1,4 @@
-function formSubmit(){
+function formSubmit(actionStatus){
 	$('form').submit(function(e){
 		e.preventDefault(); 
 		var form = $(this);
@@ -11,6 +11,7 @@ function formSubmit(){
 			data: m_data,
 			success: function(result){ 
 				console.log('success');
+				actionStatus = true;
 				document.location.href = "page-thanks.html";
 			}
 		}); 

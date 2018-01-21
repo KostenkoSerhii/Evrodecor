@@ -6,6 +6,7 @@ import sliders from './components/sliders.js';
 import careSlider from './components/care.js';
 import formSubmit from './components/form.js';
 import reviewsSlider from './components/reviewsSlider.js';
+import popup from './components/popup.js';
 import AOS from 'aos';
 // import scrollMagic from './components/scrollmagic.js';
 // import techAnimation from './components/tech-animation.js';
@@ -16,6 +17,7 @@ $(document).ready(function(){
 	let date = new Date();
 	let day = date.getDay();
 	let hour = date.getHours();
+	let actionStatus = false;
 	const days = [
 	'воскресенье',
 	'понедельник',
@@ -33,7 +35,7 @@ $(document).ready(function(){
 	// }, 10000)
 
 
-	heroSetTime(day, hour);
+	heroSetTime(day, hour, date);
 	
 	// before must be set day
 	sliders();
@@ -45,14 +47,14 @@ $(document).ready(function(){
 		disable: 'mobile'
 	});
 	counter(day, hour);
-	formSubmit()
+	formSubmit(actionStatus)
 
 	setInterval(function(){
 		let locDate = new Date();
 		let locDay = date.getDay();
 		let locHour = date.getHours();
 		if(locDay != day || locHour != hour ){
-			heroSetTime(day, hour);
+			heroSetTime(day, hour, date);
 			counter(day, hour);
 			day = locDay;
 			hour = locHour;
@@ -60,7 +62,14 @@ $(document).ready(function(){
 			// console.log('not coincidence');
 		}
 		// console.log('coincidence');
-	}, 30000)
+	}, 30000);
+	popup();
+
+function openPopup(){
+	$(`.js-popup[data-popup="popup-questions"]`).fadeIn(300);
+	$("body").addClass("is-hidden");
+};
+// openPopup();
 	//end
 });
 
