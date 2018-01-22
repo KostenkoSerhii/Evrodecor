@@ -65,10 +65,17 @@ $(document).ready(function(){
 	}, 30000);
 	popup();
 
-function openPopup(){
-	$(`.js-popup[data-popup="popup-questions"]`).fadeIn(300);
-	$("body").addClass("is-hidden");
-};
+	function openPopup(){
+		$(`.js-popup[data-popup="popup-questions"]`).fadeIn(300);
+		$("body").addClass("is-hidden");
+	};
+
+	$(document).mouseleave(function(e){
+		if (e.clientY < 0) {
+			openPopup()
+		}    
+	});
+
 // openPopup();
 	//end
 });
