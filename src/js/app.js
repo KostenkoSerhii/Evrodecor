@@ -11,7 +11,7 @@ import AOS from 'aos';
 // import scrollMagic from './components/scrollmagic.js';
 // import techAnimation from './components/tech-animation.js';
 import slick from 'slick-carousel';
-
+import {isResp991} from './components/global.js';
 $(document).ready(function(){
 	svgUseIt();
 	let date = new Date();
@@ -65,16 +65,20 @@ $(document).ready(function(){
 	}, 30000);
 	popup();
 
-	function openPopup(){
-		$(`.js-popup[data-popup="popup-questions"]`).fadeIn(300);
-		$("body").addClass("is-hidden");
+	if($(".js-is-leave-page")[0] ){
+		if(isResp991()) return;
+		function openPopup(){
+			$(`.js-popup[data-popup="popup-questions"]`).fadeIn(300);
+			$("body").addClass("is-hidden");
+		};
+
+		$(document).mouseleave(function(e){	
+			if (e.clientY < 0) {
+				openPopup()
+			}    
+		});
 	};
 
-	$(document).mouseleave(function(e){
-		if (e.clientY < 0) {
-			openPopup()
-		}    
-	});
 
 // openPopup();
 	//end
