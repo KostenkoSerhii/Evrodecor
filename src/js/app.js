@@ -65,16 +65,23 @@ $(document).ready(function(){
 	}, 30000);
 	popup();
 
+	let leaveStatus = 0;
+	console.log();
 	if($(".js-is-leave-page")[0] ){
 		if(isResp991()) return;
+		
 		function openPopup(){
 			$(`.js-popup[data-popup="popup-questions"]`).fadeIn(300);
 			$("body").addClass("is-hidden");
+
 		};
 
 		$(document).mouseleave(function(e){	
+			if(leaveStatus > 0) return;
 			if (e.clientY < 0) {
-				openPopup()
+				openPopup();
+				
+				leaveStatus = 1;
 			}    
 		});
 	};
