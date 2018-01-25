@@ -401,6 +401,7 @@ body.is-hidden {
   padding: 0 6px;
   font-size: 17px;
   color: #000;
+  transition: all 0.2s ease;
 }
 
 .header__form input::-webkit-input-placeholder {
@@ -413,6 +414,10 @@ body.is-hidden {
 
 .header__form input::placeholder {
   color: #979797;
+}
+
+.header__form input.error-field {
+  border-color: red;
 }
 
 .hero {
@@ -1075,6 +1080,7 @@ body.is-hidden {
   color: #000;
   font-family: 'Roboto', sans-serif;
   padding: 0 12px;
+  transition: all 0.2s ease;
 }
 
 .field input::-webkit-input-placeholder {
@@ -1089,7 +1095,7 @@ body.is-hidden {
   color: #979797;
 }
 
-.field.is-errow input {
+.field input.error-field {
   border-color: red;
 }
 
@@ -1489,7 +1495,13 @@ body.is-hidden {
   font-size: 18px;
   line-height: 60px;
   padding: 0 14px;
+  border: 1px solid #fff;
+  transition: all 0.2s ease;
   font-family: 'Roboto', sans-serif;
+}
+
+.care-section__form input.error-field {
+  border-color: red;
 }
 
 .care-section__btn {
