@@ -4,8 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>{% if title %}{{ title }}{% else %}Template{% endif %}</title>
+  {% if keywords %}
   <meta name="keywords" content="{{ keywords }}">
+  {% endif %}
+  {% if description %}
   <meta name="description" content="{{ description }}">
+  {% endif %}
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#fff">

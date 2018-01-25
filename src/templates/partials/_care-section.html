@@ -24,8 +24,9 @@
 				<div class="care-section__form">
 					<form action="mail.php">
 						<input type="text" placeholder="Ваш E-mail" name="email" pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+						<input class="js-input-btn-info" type="text" name="btnInfo"  style="display: none;">
 						<div class="care-section__btn">
-							<button class="btn btn--shadow-border" type="submit"><span>Узнать все!</span></button>
+							<button class="btn btn--shadow-border js-email-data-btn" type="submit" data-to-email="Узнать все"><span>Узнать все!</span></button>
 						</div>
 						
 					</form>

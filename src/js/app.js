@@ -7,6 +7,7 @@ import careSlider from './components/care.js';
 import formSubmit from './components/form.js';
 import reviewsSlider from './components/reviewsSlider.js';
 import popup from './components/popup.js';
+import localStorageInit from './components/localStorageLinks.js';
 import AOS from 'aos';
 // import scrollMagic from './components/scrollmagic.js';
 // import techAnimation from './components/tech-animation.js';
@@ -64,9 +65,11 @@ $(document).ready(function(){
 		// console.log('coincidence');
 	}, 30000);
 	popup();
-
+	// localStorage.removeItem('emailData');
+	localStorageInit();
+	// console.log(localStorage.getItem('emailData'));
 	let leaveStatus = 0;
-	console.log();
+
 	if($(".js-is-leave-page")[0] ){
 		if(isResp991()) return;
 		
