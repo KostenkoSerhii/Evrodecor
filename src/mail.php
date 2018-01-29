@@ -2,7 +2,7 @@
 
 	$msg = "";
 
-	$idform = "Установка натяжных потолков в Киеве! Новая заявка!";
+	$idform = "Установка натяжных потолков в Харькове! Новая заявка!";
 	foreach($_POST  as $name => $key){ 
 
 		if ($name=="name"){
@@ -14,7 +14,7 @@
 		}else  if ($name=="email"){
 			$name = "E-mail: ";
 		}else  if ($name=="btnInfo"){
-			$name = "Кнопка: ";
+			$name = "Харьков, кнопка: ";
 		}else  if ($name=="popno"){
 			$name = "Готое решение под ключ: ";
 		}  else {

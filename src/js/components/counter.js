@@ -1,4 +1,4 @@
-	import {zamerPlanningToday, zamerDoneToday, zamerPlanningNextDay, montazPlanningToday, montazDoneToday} from'./data.js';
+	import {zamerPlanningToday, zamerDoneToday, zamerPlanningNextDay, montazPlanningToday, montazDoneToday} from'./dataKharkiv.js';
 
 	function counter(day, hour){
 			// console.log(day);

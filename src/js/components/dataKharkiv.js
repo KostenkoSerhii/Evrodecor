@@ -263,7 +263,7 @@
 		{minTime: 9, maxTime: 0, value: 6}
 		]
 		];
-		let montazDoneToday = [
+				let montazDoneToday = [
 		//0 - воскр
 		[
 		{minTime: 0, maxTime: 8, value: 0},
