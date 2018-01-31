@@ -158,7 +158,7 @@
 		{minTime: 9, maxTime: 11, value: 1},
 		{minTime: 11, maxTime: 14, value: 2},
 		{minTime: 14, maxTime: 17, value: 3},
-		{minTime: 17, maxTime: 0, value: 0}
+		{minTime: 17, maxTime: 0, value: 4}
 		],
 		//4 - четверг
 		[
